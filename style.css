@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  flex-direction: column;
+  min-height: 100vh; /* altura mínima 100% da tela */
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(200, 197, 197);
+  width: 100%;
+  height: 80px;
+}
+
+header .esquerda{
+  margin-left: 50px;
+}
+header .direita{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 20%;
+  height: 100%;
+}
+
+header .direita a{
+  color: black;
+  text-decoration: none;
+}
+
+.card{
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.card .titulo{
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+.card .titulo h1{
+  font-size: 3em;
+}
+
+.card .pesquisa{
+  width: 33%;
+  margin-left: 31%;
+  margin-right: 31%;
+  margin-top: 20px;
+}
+
+.pesquisa form{
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(200, 197, 197);
+  border-radius: 5px;
+  overflow: hidden;
+  
+}
+
+.pesquisa form input{
+  height: 40px;
+  width: 400px;
+  border-radius: 5px;
+  border: none;
+}
+
+input:focus{
+  outline: none;
+}
+
+.pesquisa form button{
+  border: none;
+  background: white;
+  color: #007bff;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor:pointer;
+  font-size: 14px;
+}
+
+.tarefas{
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  margin-right: 60px;
+}
+
+.tarefas ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-size: 1.4em;
+}
+
+#listaTarefas li {
+  border-bottom: 1px solid #ccc; /* linha fina cinza */
+  padding: 8px 0;                /* espaço acima e abaixo do conteúdo */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input[type="checkbox"] {
+  display: flex;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  accent-color: #4CAF50; /* cor do check */
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+footer {
+  margin-top: 20px;
+  position: fixed;       /* fixa na tela */
+  bottom: 0;             /* fica colado na parte inferior */
+  left: 0;
+  width: 100%;           /* ocupa toda a largura */
+  border: 1px solid rgb(200, 197, 197);
+  color: black;
+  text-align: center;
+  padding: 12px 0;
+  z-index: 1000;         /* garante que fique acima de outros elementos */
+}
