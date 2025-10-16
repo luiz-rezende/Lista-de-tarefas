@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minhas Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="esquerda">
+      <h1>Minhas Tarefas</h1>
+    </div>
+    <div class="direita2">
+      <a href="index.html"><h2>Inicio</h2></a>
+    </div>
+  </header>
+
+  <style>
+    header .direita2{
+        display: flex;
+        margin-left: auto;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
+        height: 100%;
+    }
+
+    header .direita2 a{
+      text-decoration: none;
+      color: black;
+    }
+
+    .titulo{
+      margin-left: 30%;
+      margin-right: 30%;
+      margin-top: 30px;
+    }
+
+    .minhas-tarefas{
+      display: flex;
+      margin-left: 30%;
+      margin-right: 50%;
+      margin-top: 20px;
+      justify-content: space-between;
+    }
+
+    .minhas-tarefas .todas button{
+      border: 1px solid grey;
+      width: 70px;
+      height: 30px;
+      background: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 4px;
+      padding: 5px 10px;
+    }
+
+    .minhas-tarefas .concluidas button{
+      border: 1px solid grey;
+      width: 100px;
+      height: 30px;
+      background: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 4px;
+      padding: 5px 10px;
+    }
+
+    .minhas-tarefas .pendentes button{
+      border: 1px solid grey;
+      width: 90px;
+      height: 30px;
+      background: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 4px;
+      padding: 5px 10px;
+    }
+
+    .contador{
+      display: flex;
+      margin-left: 30%;
+      margin-right: 50%;
+      margin-top: 15px;
+    }
+
+    .contador p{
+      font-weight: bold;
+    }
+  </style>
+
+    <div class="titulo">
+      <h1>Minhas Tarefas</h1>
+    </div>
+    <div class="minhas-tarefas">
+        <div class="todas">
+            <a href=""><button>Todas</button></a>
+        </div>
+        <div class="concluidas">
+            <a href=""><button>Concluidas</button></a>
+        </div>
+        <div class="pendentes">
+            <a href=""><button>Pendentes</button></a>
+        </div>
+        
+    </div>
+    <div class="contador">
+      <p>Você tem 0 tarefas</p>
+      <div class="tarefas">
+        <ul id="listaTarefas"></ul>
+      </div>
+    </div>
+
+  <footer>
+    <p>© 2025 Luiz Guilherme.</p>
+  </footer>
+  
+</body>
+
+</html>
